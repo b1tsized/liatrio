@@ -15,6 +15,11 @@ terraform {
       version = "~> 4.0.4"
     }
 
+    time = {
+      source  = "hashicorp/time"
+      version = "0.10.0"
+    }
+
     cloudinit = {
       source  = "hashicorp/cloudinit"
       version = "~> 2.3.2"
@@ -31,7 +36,7 @@ terraform {
     }
   }
 
-  required_version = "~> 1.3"
+  required_version = "~> 1.5"
 }
 
 # AWS

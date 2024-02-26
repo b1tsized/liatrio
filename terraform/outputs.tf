@@ -1,3 +1,20 @@
+# VPC Outputs
+
+output "vpc_name" {
+  description = "Name of the new VPC"
+  value       = module.vpc.name
+}
+
+output "vpc_public_cidrs" {
+  description = "VPC Public CIDR Blocks"
+  value       = module.vpc.public_subnets_cidr_blocks
+}
+
+output "vpc_private_cidrs" {
+  description = "VPC Private CIDR Blocks"
+  value       = module.vpc.private_subnets_cidr_blocks
+}
+
 # EKS Outputs
 output "cluster_endpoint" {
   description = "Endpoint for EKS control plane"
